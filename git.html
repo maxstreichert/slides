@@ -234,6 +234,38 @@
 				</section>
 			</section>
 
+			<section>
+				<section>
+					<h2>git remote</h2>
+					manage remote repos
+				</section>
+				<section>
+					the default remote repo is named origin
+					<pre><code class="shell" data-trim contenteditable>
+						$ git remote get-url origin
+					</code></pre>
+				</section>
+				<section>
+					set a new remote repo e.g. new fork
+					<pre><code class="shell" data-trim contenteditable>
+						$ git remote add new-fork ssh://git@host.com/new-fork.git
+					</code></pre>
+				</section>
+				<section>
+					checkout a branch of the new remote repo
+					<pre><code class="shell" data-trim contenteditable>
+						$ git fetch new-fork
+						$ git checkout -t new-fork/my-new-branch
+					</code></pre>
+				</section>
+				<section>
+					merge branches between remote repos
+					<pre><code class="shell" data-trim contenteditable>
+						$ git merge origin/my-old-branch
+					</code></pre>
+				</section>
+			</section>
+
 		</div>
 	</div>
 
